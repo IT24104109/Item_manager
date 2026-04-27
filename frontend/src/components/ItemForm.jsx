@@ -29,7 +29,10 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <h2>{submitText}</h2>
 
       <label>Item Name</label>
-      <input name="name" value={formData.name} onChange={handleChange} required />
+      <input name="name" value={formData.name} onChange={handleChange} required /> 
+
+      <label>Serial Number</label>
+      <input name="serialNumber" value={formData.serialNumber} onChange={handleChange} required />
 
       <label>Category</label>
       <input name="category" value={formData.category} onChange={handleChange} required />

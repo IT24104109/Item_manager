@@ -7,6 +7,12 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Item name is required"],
       trim: true,
     },
+    serialNumber: {
+      type: Number,
+      required: [true, "Serial number is required"],
+      unique: true,
+      min: [0, "Serial number cannot be negative"],
+    },
     category: {
       type: String,
       required: [true, "Category is required"],
